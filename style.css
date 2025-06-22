@@ -1,0 +1,24 @@
+links div {
+  color: red;
+  background: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: double darkred;
+
+  margin: 15px;
+  padding: 15px;
+  text-size: 50px;
+  
+}
+ul {
+  color: #BD5E5E
+}
+h2 {
+
+  color: bla#171414
+}
+p {
+  
+}
