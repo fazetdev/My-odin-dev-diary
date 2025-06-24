@@ -4,12 +4,12 @@ body {
   margin: 60px auto;
   max-width: 900px;
   padding: 40px;
-  background-color: #1545c7; /* coral */
+  background-color: steelblues;
   border: 4px solid #1c630e;
   border-radius: 12px;
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  color: rgb(145, 93, 16) /* soft antique white */
+  color: rgb(145, 93, 16);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -24,6 +24,13 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Subtitle below nav */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
 /* Flex container for top links or nav */
 .first {
   display: flex;
@@ -34,25 +41,45 @@ h1 {
   font-size: 18px;
 }
 
-/* Image or side feature section */
-.magi {
+/* Main intro section */
+.intro-section {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Text content */
+.nani {
+  flex: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Profile image */
+.profile-pic img {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer or center-aligned content */
 .lasti {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   font-size: 18px;
   margin-top: 30px;
   gap: 10px;
 }
 
-/* Optional: link styling */
+/* Link styling */
 a {
   color: #fdfdfd;
   text-decoration: none;
@@ -62,4 +89,21 @@ a {
 a:hover {
   color: #1c630e;
 }
-s
+
+/* Section headers */
+h3 {
+  margin-top: 40px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* List spacing */
+ul, ol {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 16px;
+}
