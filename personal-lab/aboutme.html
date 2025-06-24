@@ -5,103 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me - FazetDev</title>
   <style>
-  /* UNIVERSAL SELECTOR */
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 2px;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  /* ===============================
+   UNIVERSAL SELECTOR
+================================ */
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===============================
+   TYPE SELECTORS
+================================ */
+body {
+  background: linear-gradient(to bottom right, #fefcea, #f1da36);
+  padding: 40px;
+  margin: 80px;
+  border-radius: 8px;
+  border: 2px solid #4ca1af;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  background: yellowgreen;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+h2 {
+  background: #178eab;
+  color: #ab3d17;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 2px solid #222;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+ul {
+  padding-left: 30px;
+  margin-bottom: 25px;
+  list-style-type: disc;
+}
+
+/* ===============================
+   CLASS SELECTORS
+================================ */
+.secondi {
+  background-color: lavenderblush;
+  color: #9f7711;
+  padding: 14px;
+  font-style: italic;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.goali {
+  background: #ffe6e6;
+  color: indianred;
+  border-left: 6px solid indianred;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.phylo {
+  background: seashell;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.lasti {
+  font-style: italic;
+  color: hsl(67, 60%, 42%);
+}
+
+.milo {
+  color: hsl(250, 91%, 34%);
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   ID SELECTOR
+================================ */
+#main-heading {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+</style>
   
-  /* TYPE SELECTORS */
-  body {
-    background: linear-gradient(to bottom right, #fefcea, #f1da36);
-    padding: 15px;
-  }
-  
-  h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: yellowgreen;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  h2 {
-    background: rgba(23, 142, 171, 1);
-    color: rgba(171, 61, 23, 1);
-    text-align: center;
-    padding: 8px;
-    border-bottom: 2px solid #222;
-    border-radius: 6px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    line-height: 1.7;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    padding-left: 25px;
-    margin-bottom: 20px;
-  }
-  
-  /* CLASS SELECTORS */
-  .secondi {
-    padding: 12px;
-    font-style: italic;
-    color: rgba(159, 119, 17, 1);
-    background-color: lavenderblush;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-  }
-  
-  .goali {
-    margin: 10px 0;
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #ffe6e6;
-    color: indianred;
-    border-left: 4px solid indianred;
-    border-radius: 6px;
-  }
-  
-  .phylo {
-    padding: 10px;
-    color: black;
-    background: seashell;
-    font-weight: bold;
-    font-style: italic;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
-    border-radius: 10px;
-  }
-  
-  .lasti {
-    font-style: italic;
-    color: hsla(67, 60%, 42%, 1);
-  }
-  
-  .milo {
-    color: hsla(250, 91%, 34%, 1);
-    font-style: italic;
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
-  
-  /* ID SELECTOR */
-  #main-heading {
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
-  }
-  </style>
 </head>
 <body>
 
