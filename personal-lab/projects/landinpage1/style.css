@@ -1,47 +1,108 @@
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
-}
-
 .header-section {
-  font-size: 32px;
-  text-align: center;
-  margin: 20px;
-  padding: 5px;
-  color: firebrick;
-  background: #9FC987;
-  background-size: cover;
-  background-position: ;
+  background: #1F2937;
   
 }
-
-.hero-section {
-  display: flex;
-
-}
-.underit {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: start;
+h1 {
+  color: #FFD700;
   text-align: center;
-  color: whitesmoke;
-  background: rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  m
 }
-.bgimage {
-  display: flex;
-  justify-content: center;
-  background-image: ;
+.tagline {
+  color: #EFE7EB;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.hero-text { 
   height: 600px;
   width: auto;
-  color white#7177B9
+  border: 2px solid #E35209;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-undertext {
+  display: flex;
+  justify-content: center;
   
 }
-.hero-text,
+.features-section {
+  background: #F9FAFB;
+  color: #374151;
+}
+h2 {
+  #1F2937
+  text-align: center;
+  font-size: 28px;
+}
+.suya-grid-section {
+  height: 400px;
+  width: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-.image-caption {
-  font-size: 25px;
-  font-style: italics;
-  text-align: ;
+.box-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #1CC93D;
+  padding: 10px;
+}
+
+.box {
+  height: 100px;
+  width
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #C61438;
+}
+
+.box-grid p {
+  margin: 10px 0 0 0; /* Ensures text is below the box with spacing */
+}
+.cta-section {
+  background: #4F94E6;
   
+}
+.cta-heading {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+}
+.cta-offer {
+  color: #E5E7EB;
+  font-size: 20px;
+}
+.cta-button {
+  background: #DC143C;
+  color: #FFFFFF;
+  width: 150px;
+  height: 45px;
+}
+.footer-section {
+  background: #18191A;
+  color: #E5E7EB;
+}
+.footer-note {
+  text-align: center;
+  font-size: 24px;
+}
+.footer-contact {
+  font-size: 24px;
+  margin: 20px 30px;
+  padding: 10px;
+}
+.footer-delivary {
+  font-size: 32px;
 }
