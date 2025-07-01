@@ -1,24 +1,36 @@
 .header-section {
   background: #1F2937;
-  
+  padding: 20px 0;
 }
+
 h1 {
   color: #FFD700;
   text-align: center;
   font-size: 32px;
-  m
+  margin: 0; /* Fixed missing margin */
 }
+
 .tagline {
   color: #EFE7EB;
   text-align: center;
   font-size: 24px;
   font-style: italic;
+  margin: 0;
 }
+
 .hero-section {
   height: 400px;
   width: auto;
   background-image: url("images/heromeat.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
 }
+
 .hero-text { 
   height: 600px;
   width: auto;
@@ -27,32 +39,48 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
 }
+
 .hero-undertext {
   display: flex;
   justify-content: center;
-  
 }
+
 .features-section {
   background: #F9FAFB;
   color: #374151;
+  padding: 40px 20px;
 }
+
 h2 {
-  #1F2937
+  color: #1F2937;
   text-align: center;
   font-size: 28px;
+  margin: 0 0 20px 0;
 }
+
 .suya-grid-section {
-  height: 400px;
-  width: auto;
+  width: 100%;
+  padding: 40px 20px;
 }
+
 .container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+<<<<<<< HEAD
   flex-wrap: wrap;
   widh: 10%;
+=======
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+>>>>>>> b0e918c12320ef35f2dde9dba7a303a655ea6ec5
 }
 
 .box-grid {
@@ -61,54 +89,89 @@ h2 {
   align-items: center;
   border: 2px solid #1CC93D;
   padding: 10px;
+  max-width: 250px;
+  width: 100%;
 }
 
 .box {
+<<<<<<< HEAD
   height: auto;
   max-width: ;
+=======
+  width: 100%;
+>>>>>>> b0e918c12320ef35f2dde9dba7a303a655ea6ec5
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 2px solid #C61438;
+<<<<<<< HEAD
   height: auto;
   width: auto;
+=======
+  padding: 5px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+>>>>>>> b0e918c12320ef35f2dde9dba7a303a655ea6ec5
 }
 
 .box-grid p {
-  margin: 10px 0 0 0; /* Ensures text is below the box with spacing */
+  margin: 10px 0 0 0;
+  text-align: center;
 }
+
 .cta-section {
   background: #4F94E6;
-  
+  padding: 40px 20px;
+  text-align: center;
 }
+
 .cta-heading {
   color: #FFFFFF;
   font-size: 32px;
   font-weight: bold;
+  margin: 0 0 10px 0;
 }
+
 .cta-offer {
   color: #E5E7EB;
   font-size: 20px;
+  margin: 0 0 20px 0;
 }
+
 .cta-button {
   background: #DC143C;
   color: #FFFFFF;
   width: 150px;
   height: 45px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
+
 .footer-section {
   background: #18191A;
   color: #E5E7EB;
-}
-.footer-note {
+  padding: 30px 20px;
   text-align: center;
-  font-size: 24px;
 }
+
+.footer-note {
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
 .footer-contact {
   font-size: 24px;
-  margin: 20px 30px;
-  padding: 10px;
+  margin: 20px 0 10px 0;
+  padding: 10px 0;
 }
+
 .footer-delivary {
   font-size: 32px;
-}
+  margin: 10px 0 0 0;
+} 
