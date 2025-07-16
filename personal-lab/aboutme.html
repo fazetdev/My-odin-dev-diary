@@ -1,191 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me - FazetDev</title>
   <style>
-  /* ===============================
-   UNIVERSAL SELECTOR
-================================ */
-* {
-  margin: 0;
-  padding: 2px;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    :root {
+      --primary: #4f46e5;
+      --secondary: #06b6d4;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --bg-light: #aebdcc;
+      --bg-card: #ffffff;
+      --accent: #fcd34d;
+    }
 
-/* ===============================
-   TYPE SELECTORS
-================================ */
-body {
-  background: linear-gradient(to bottom right, #fefcea, #f1da36);
-  padding: 40px;
-  margin: 80px;
-  border-radius: 8px;
-  border: 2px solid #4ca1af;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-h1 {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-  background: yellowgreen;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
-}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: 2rem;
+    }
 
-h2 {
-  background: #178eab;
-  color: #ab3d17;
-  text-align: center;
-  padding: 12px;
-  border-bottom: 2px solid #222;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  font-size: 1.5em;
-}
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
 
-p {
-  line-height: 1.8;
-  font-size: 1rem;
-  margin-bottom: 12px;
-  color: #333;
-}
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-ul {
-  padding-left: 30px;
-  margin-bottom: 25px;
-  list-style-type: disc;
-}
+    main {
+      max-width: 800px;
+      margin: auto;
+      background: rgb(148, 143, 143);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
 
-/* ===============================
-   CLASS SELECTORS
-================================ */
-.secondi {
-  background-color: lavenderblush;
-  color: #9f7711;
-  padding: 14px;
-  font-style: italic;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
-}
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      display: block;
+    }
 
-.goali {
-  background: #ffe6e6;
-  color: indianred;
-  border-left: 6px solid indianred;
-  padding: 12px;
-  margin: 15px 0;
-  border-radius: 8px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 
-.phylo {
-  background: seashell;
-  color: #000;
-  font-weight: bold;
-  font-style: italic;
-  padding: 12px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-}
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
 
-.lasti {
-  font-style: italic;
-  color: hsl(67, 60%, 42%);
-}
+    p, li {
+      color: var(--text-dark);
+      font-size: 1rem;
+    }
 
-.milo {
-  color: hsl(250, 91%, 34%);
-  font-style: italic;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
+    section {
+      margin-bottom: 2rem;
+    }
 
-/* ===============================
-   ID SELECTOR
-================================ */
-#main-heading {
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  color: #fff;
-  text-align: center;
-  padding: 25px;
-  border-radius: 12px;
-  font-size: 2rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-</style>
-  
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>👋 About Me</h1>
+    <h1>👋 About FazetDev</h1>
+    <p>Educator turned Web Developer</p>
   </header>
 
-  <section>
-    <img src="images/faruk.jpg" alt="Photo of Faruk Bashir Aminu" width="200">
-    <p>
-      My name is <strong>Faruk Bashir Aminu</strong>, but back home in Kano, Nigeria, I answer to <em>Yaya Yalo</em> or <em>Roma Rio</em> — my childhood nicknames.
-      Online and in the tech world, I go by <strong>FazetDev</strong>.
-    </p>
-    <p>
-      I hold a <strong>Diploma in Medical Laboratory Science</strong> and a <strong>BSc in Applied Biology</strong>. I currently teach biology, but I'm transitioning into tech with serious intent.
-    </p>
-  </section>
+  <main>
+    <div class="intro">
+      <img src="images/faruk.jpg" alt="Photo of Faruk Bashir Aminu" />
+      <p>
+        <a href="../index.html">⬅ Back to Home</a>
+      </p>
+      <p>
+        Hi, I’m <strong>Faruk Bashir Aminu</strong>, also known as <em>Yaya Yalo</em> or <em>Roma Rio</em> back home in Kano, Nigeria. Online, I go by <strong>FazetDev</strong>.
+      </p>
+      <p>
+        With a Diploma in Medical Laboratory Science and a BSc in Applied Biology, I currently teach biology — but I’m transitioning into tech with serious intent.
+      </p>
+    </div>
 
-  <section>
-    <h2>🧭 Learning Journey</h2>
-    <p>
-      I’m learning full-stack web development through:
-    </p>
-    <ul>
-      <li>The Odin Project</li>
-      <li>CS50</li>
-      <li>Full Stack Open (FSO)</li>
-    </ul>
-    <p>
-      My laptop only holds 2 hours of power daily, so I adapted by working on my phone with Termux and TrebEdit — aiming for 6–7 productive hours daily.
-    </p>
-  </section>
+    <section>
+      <h2>🧭 Learning Journey</h2>
+      <p>I’m learning full-stack web development through:</p>
+      <ul>
+        <li>The Odin Project</li>
+        <li>CS50</li>
+        <li>Full Stack Open (FSO)</li>
+      </ul>
+      <p>
+        Despite my laptop only lasting 2 hours on battery, I’ve adapted to mobile workflows using Termux and TrebEdit to keep going for 6–7 productive hours daily.
+      </p>
+    </section>
 
-  <section>
-    <h2>🎯 Goals</h2>
-    <ul>
-      <li>Build 3–5 standout projects</li>
-      <li>Master front-end and back-end web development</li>
-      <li>Learn Saudi Arabic dialect</li>
-      <li>Transition fully from teaching to tech</li>
-      <li>Add UI/UX design to my skillset</li>
-      <li>Contribute to open-source projects</li>
-      <li>Secure a tech role (remote or in Saudi Arabia)</li>
-      <li>Document my journey and help others learn</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🎯 Goals</h2>
+      <ul>
+        <li>Build 3–5 standout projects</li>
+        <li>Master front-end and back-end development</li>
+        <li>Learn Saudi Arabic dialect</li>
+        <li>Transition from teaching to a full tech career</li>
+        <li>Learn UI/UX design</li>
+        <li>Contribute to open-source projects</li>
+        <li>Secure a remote or Saudi-based tech job</li>
+        <li>Document and share my learning journey</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>🤝 Let’s Connect</h2>
-    <ul>
-      <li>GitHub: <a href="https://github.com/fazetdev">fazetdev</a></li>
-      <li>X (Twitter): <a href="https://x.com/fazetdev">@fazetdev</a></li>
-      <li>YouTube: <a href="https://youtube.com/@fazetdev">@fazetdev</a></li>
-      <li>Discord: FazetDev#XXXX</li>
-      <li>Odin Project: [Add your profile link]</li>
-      <li>Email: [Add your email]</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🤝 Let’s Connect</h2>
+      <ul class="contact-list">
+        <li>GitHub: <a href="https://github.com/fazetdev" target="_blank">fazetdev</a></li>
+        <li>X (Twitter): <a href="https://x.com/fazetdev" target="_blank">@fazetdev</a></li>
+        <li>YouTube: <a href="https://youtube.com/@fazetdev" target="_blank">@fazetdev</a></li>
+        <li>Discord: <code>FazetDev#XXXX</code></li>
+        <li>Odin Profile: <em>(add link)</em></li>
+        <li>Email: <em>(add email)</em></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>🧠 Philosophy</h2>
-    <p>
-      Coding is more than syntax — it's building tools, solving real problems, and crafting experiences that last. I believe in learning in public, growing with intention, and building things that speak long after the browser closes.
-    </p>
-  </section>
+    <section>
+      <h2>🧠 Philosophy</h2>
+      <p>
+        Coding isn’t just about syntax — it’s about crafting solutions, building tools, and making a difference. I believe in learning publicly, growing intentionally, and building projects that speak even after the browser is closed.
+      </p>
+    </section>
+  </main>
+
+  <div class="footer-note">
+    &copy; 2025 FazetDev. Keep building, keep growing.
+  </div>
 
 </body>
 </html>
