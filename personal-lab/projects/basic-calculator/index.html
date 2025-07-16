@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic calculator</title>
+</head>
+<body>
+
+
+
+</body>
+<script>
+    function perform_calculation() {
+    let firstInput = prompt("Please enter the first number");
+    let yourOperation = prompt("Choose your action: +, -, *, or /");
+  
+    let secondInput = prompt("Please enter the second number");
+   
+    firstInput = Number(firstInput);
+    secondInput = Number(secondInput);
+  
+    if (yourOperation === "*") {
+      console.log(firstInput * secondInput);
+    } else if (yourOperation === "+") {
+      console.log(firstInput + secondInput);
+    } else if (yourOperation === "-") {
+      console.log(firstInput - secondInput);
+    } else if (yourOperation === "/") {
+      console.log(firstInput / secondInput);
+    } else {
+      alert("Invalid operation!");
+    }
+  }
+  
+  perform_calculation();
+  
+</script>
+</html>
