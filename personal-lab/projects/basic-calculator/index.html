@@ -9,31 +9,34 @@
 
 
 
-</body>
-<script>
-    function perform_calculation() {
+</body><script>
+  function perform_calculation() {
     let firstInput = prompt("Please enter the first number");
     let yourOperation = prompt("Choose your action: +, -, *, or /");
-  
     let secondInput = prompt("Please enter the second number");
-   
+
     firstInput = Number(firstInput);
     secondInput = Number(secondInput);
-  
+
+    let result;
+
     if (yourOperation === "*") {
-      console.log(firstInput * secondInput);
+      result = firstInput * secondInput;
     } else if (yourOperation === "+") {
-      console.log(firstInput + secondInput);
+      result = firstInput + secondInput;
     } else if (yourOperation === "-") {
-      console.log(firstInput - secondInput);
+      result = firstInput - secondInput;
     } else if (yourOperation === "/") {
-      console.log(firstInput / secondInput);
+      result = firstInput / secondInput;
     } else {
       alert("Invalid operation!");
+      return;
     }
+
+    alert(`Result: ${firstInput} ${yourOperation} ${secondInput} = ${result}`);
   }
-  
+
   perform_calculation();
-  
 </script>
+
 </html>
