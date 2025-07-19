@@ -143,6 +143,19 @@ li {
   color: var(--accent);
 }
 
+/* === JavaScript Output Styling === */
+.js-output {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
 /* === Footer === */
 .footer-nav {
   text-align: center;
