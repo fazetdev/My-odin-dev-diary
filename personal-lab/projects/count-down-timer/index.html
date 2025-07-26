@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>count-down-timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="screen">
+        <div id="countdown">
+          <span id="days">0</span> days 
+          <span id="hours">0</span> hours 
+          <span id="minutes">0</span> minutes 
+          <span id="seconds">0</span> seconds
+        </div>
+      </div>
+      
+
+  </div>
+
+  <div class="input-group">
+    <label for="datetime">Choose Target Date & Time:</label>
+    <input type="datetime-local" id="datetime">
+  </div>
+
+  <div class="controls">
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+    <button id="cancel-btn">Cancel</button>
+    <button id="stop-btn">Stop</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
