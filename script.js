@@ -1,6 +1,6 @@
 function updateClock() {
   const clockElement = document.getElementById("clock");
-  const dateElement = document.getElementById("date");
+  const dateElement = document.getElementById("day");
 
   const now = new Date();
 

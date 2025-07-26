@@ -7,6 +7,7 @@
   --bg-light: #f9fafb;
   --white: #ffffff;
   --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
 }
 
 /* === Base Styles === */
@@ -14,21 +15,19 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
   max-width: 960px;
-  background-color: rgb(156, 152, 152);
+  background-color: var(--bg-light);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   line-height: 1.7;
   color: var(--text-dark);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
 }
 
 /* === Hero Section === */
 .hero {
-  background: rgb(94, 7, 7);
+  background: #222;
   color: var(--white);
   padding: 30px 20px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
@@ -42,10 +41,11 @@ body {
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: #f1f1f1;
+  color: #e0e0e0;
   margin-top: 10px;
 }
 
+/* === Navigation === */
 .nav {
   display: flex;
   justify-content: center;
@@ -55,14 +55,30 @@ body {
 }
 
 .nav a {
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
 .nav a:hover {
-  opacity: 0.85;
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* === JS Output === */
+.js-output {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: center;
+  box-shadow: var(--shadow);
 }
 
 /* === Intro Section === */
@@ -70,9 +86,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(95, 92, 92);
+  background-color: #f3f4f6;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 40px;
   box-shadow: var(--shadow);
   text-align: center;
@@ -89,7 +105,7 @@ body {
 .intro-text p {
   max-width: 700px;
   margin-bottom: 16px;
-  color: rgb(230, 225, 225);
+  color: #333;
 }
 
 /* === Section Styling === */
@@ -99,7 +115,7 @@ section {
 
 .section-title {
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: var(--text-dark);
   margin-bottom: 15px;
   border-left: 6px solid var(--accent);
   padding-left: 12px;
@@ -114,15 +130,15 @@ ul, ol {
 
 li {
   margin-bottom: 10px;
-  color: #070808;
+  color: #222;
 }
 
 /* === Weekly Navigation === */
 .explore {
-  background-color: rgb(94, 89, 90);
-  border: 1px solid #e0e0e0;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
@@ -143,33 +159,22 @@ li {
   color: var(--accent);
 }
 
-/* === JavaScript Output Styling === */
-.js-output {
-  font-weight: bold;
-  font-size: 1.2rem;
-  background-color: var(--white);
-  color: var(--primary);
-  padding: 10px 15px;
-  border-radius: 8px;
-  margin-top: 20px;
-  text-align: center;
-  box-shadow: var(--shadow);
-}
-
 /* === Footer === */
 .footer-nav {
   text-align: center;
   font-size: 16px;
   color: var(--text-light);
   margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
 }
 
 .footer-nav a {
-  color: blue;
+  color: var(--primary);
   text-decoration: none;
   margin: 0 10px;
 }
 
 .footer-nav a:hover {
-  color: black;
+  color: var(--accent);
 }
