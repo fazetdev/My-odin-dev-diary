@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.screen {
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #e0f0ff;
+  color: #0077cc;
+  transition: all 0.3s ease;
+}
+
+input.time-input {
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input.time-input:focus {
+  border-color: #0077cc;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button {
+  background-color: #28a745;
+  color: white;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.cancel:hover {
+  background-color: #c82333;
+}
+
+/* Optional: change screen color based on status */
+.screen.done {
+  background-color: #e6ffee;
+  color: #1b8f3e;
+}
+
+.screen.cancelled {
+  background-color: #ffe6e6;
+  color: #cc0000;
+}
