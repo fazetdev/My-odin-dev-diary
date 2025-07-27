@@ -1,21 +1,62 @@
-const startBtn = document.querySelector("#start-btn");
+const countdownDisplay = document.getElementById("countdown");
+const startBtn = document.getElementById("startBtn");
+const resetBtn = document.getElementById("resetBtn");
+const cancelBtn = document.getElementById("cancelBtn");
+const datetimeInput = document.getElementById("datetime");
 
-startBtn.addEventListener("click", () => {
-  const input = document.querySelector("#datetime");
-  const targetDate = new Date(input.value);
+let countdownInterval;
 
-  setInterval(() => {
-    const now = new Date();
-    const timeRemaining = targetDate - now;
+function updateCountdown() {
+  const storedTargetTime = localStorage.getItem("targetTime");
+  if (!storedTargetTime) return;
 
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
-    const seconds = Math.floor((timeRemaining / 1000) % 60);
+  const targetTime = new Date(storedTargetTime).getTime();
+  const now = new Date().getTime();
+  const diff = targetTime - now;
 
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours;
-    document.getElementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds;
-  }, 1000);
-});
+  if (diff <= 0) {
+    clearInterval(countdownInterval);
+    countdownDisplay.innerHTML = "Countdown ended";
+    localStorage.removeItem("targetTime");
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  countdownDisplay.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+function startCountdown() {
+  const targetTime = new Date(datetimeInput.value).getTime();
+  if (!datetimeInput.value || isNaN(targetTime)) return;
+
+  localStorage.setItem("targetTime", datetimeInput.value);
+  clearInterval(countdownInterval);
+  countdownInterval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+}
+
+function resetCountdown() {
+  datetimeInput.value = "";
+  countdownDisplay.innerHTML = "";
+  clearInterval(countdownInterval);
+  localStorage.removeItem("targetTime");
+}
+
+function cancelCountdown() {
+  clearInterval(countdownInterval);
+  countdownDisplay.innerHTML = "Cancelled";
+  localStorage.removeItem("targetTime");
+}
+
+startBtn.addEventListener("click", startCountdown);
+resetBtn.addEventListener("click", resetCountdown);
+cancelBtn.addEventListener("click", cancelCountdown);
+
+if (localStorage.getItem("targetTime")) {
+  countdownInterval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+}
