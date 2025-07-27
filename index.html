@@ -11,25 +11,36 @@
   <!-- Hero Section -->
   <header class="hero">
     <h1 class="hero-title">The Odin Quest of Faruk</h1>
+
     <nav class="nav">
       <a href="personal-lab/index.html">Personal Lab</a>
       <a href="odin-lab/index.html">Odin Lab</a>
     </nav>
+
     <p class="hero-subtitle">From Biology to Brackets — One Line of Code at a Time</p>
 
-    <!-- Clock and Day Output -->
-    <div id="countdown">
-      <span id="days">00</span> days
-      <span id="hours">00</span> hours
-      <span id="minutes">00</span> minutes
-      <span id="seconds">00</span> seconds
+    <!-- Live Clock & Date -->
+    <div class="datetime">
+      <p id="clock" class="clock">--:--:--</p>
+      <p id="day" class="day">Loading date...</p>
     </div>
-    <div class="js-output" id="clock"></div>
-    <div class="js-output" id="day"></div>
-    <p>The goal is to finish Odin before the deadline above.</p>
+
+    <!-- Countdown -->
+    <div id="countdown">
+      <div id="top-line">
+        <span id="days">00</span> <span class="label">Days</span>
+      </div>
+      <div id="bottom-line">
+        <span id="hours">00</span><span class="label">h</span> :
+        <span id="minutes">00</span><span class="label">m</span> :
+        <span id="seconds">00</span><span class="label">s</span>
+      </div>
+    </div>
+
+    <p class="goal-message">The goal is to finish Odin before the deadline above.</p>
   </header>
 
-  <!-- Intro with Photo on Top -->
+  <!-- Intro with Photo -->
   <section class="intro">
     <div class="intro-image">
       <img src="images/faruk.jpg" alt="Faruk Bashir Aminu" width="180" />
@@ -69,7 +80,7 @@
     <p>Everything I learn is logged right here — raw and real.</p>
   </section>
 
-  <!-- Setup -->
+  <!-- Daily Setup -->
   <section class="daily-setup">
     <h2 class="section-title">🛠️ My Daily Setup</h2>
     <ul>
@@ -79,7 +90,7 @@
     </ul>
   </section>
 
-  <!-- What This Site Contains -->
+  <!-- Site Content -->
   <section class="site-content">
     <h2 class="section-title">🗂️ What You'll Find Here</h2>
     <ul>
@@ -99,6 +110,7 @@
       <li><a href="week-3/index.html">Week 3</a></li>
       <li><a href="week-4/index.html">Week 4</a></li>
       <li><a href="week-5/index.html">Week 5</a></li>
+      <li><a href="week-6/index.html">Week 6</a></li>
       <li><a href="odin-lab/index.html">Odin Projects</a></li>
     </ul>
   </section>
