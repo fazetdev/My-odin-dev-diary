@@ -1,0 +1,44 @@
+/* Countdown at top of page */
+#countdown {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2BD838;
+  color: #151313;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Top line: Days */
+#top-line {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Bottom line: Hours : Minutes : Seconds */
+#bottom-line {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
